@@ -597,6 +597,7 @@ def main():
         if CERT_PATH:
             updater.bot.set_webhook(url=URL + TOKEN,
                                     certificate=open(CERT_PATH, 'rb'))
+
         else:
             updater.bot.set_webhook(url=URL + TOKEN)
 
